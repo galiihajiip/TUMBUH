@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary": "#ffffff", "on-error": "#ffffff", "outline": "#936e6a", "on-error-container": "#93000a", "primary": "#bb0013", "on-tertiary-fixed-variant": "#5c4200", "secondary": "#5c5e65", "primary-fixed": "#ffdad6", "surface-container-low": "#eff4ff", "secondary-fixed": "#e1e2ea", "error-container": "#ffdad6", "on-tertiary-fixed": "#261900", "surface-container-highest": "#d3e4fe", "outline-variant": "#e8bcb7", "on-primary-container": "#fffbff", "error": "#ba1a1a", "secondary-fixed-dim": "#c4c6ce", "surface": "#f8f9ff", "on-primary": "#ffffff", "on-primary-fixed": "#410002", "on-secondary": "#ffffff", "secondary-container": "#dedfe8", "tertiary-fixed": "#ffdea2", "tertiary-container": "#966e00", "on-background": "#0b1c30", "primary-container": "#e71621", "on-surface-variant": "#5e3f3c", "surface-bright": "#f8f9ff", "on-secondary-container": "#60626a", "inverse-primary": "#ffb4ab", "surface-tint": "#c00014", "inverse-surface": "#213145", "on-secondary-fixed-variant": "#44474d", "tertiary-fixed-dim": "#f2bf50", "inverse-on-surface": "#eaf1ff", "surface-container-high": "#dce9ff", "surface-container": "#e5eeff", "on-surface": "#0b1c30", "tertiary": "#775700", "on-primary-fixed-variant": "#93000d", "on-tertiary-container": "#fffbff", "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#191c22", "surface-variant": "#d3e4fe", "primary-fixed-dim": "#ffb4ab", "background": "#f8f9ff", "surface-dim": "#cbdbf5" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "space-md": "1rem", "margin-sm": "1rem", "space-xl": "2.5rem", "margin": "2rem", "gutter-sm": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem" }, "fontFamily": { "body-lg": ["Inter"], "metric-numeral": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "metric-numeral": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom, 0px) + 0.5rem);}.pt-safe{padding-top:env(safe-area-inset-top, 0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-md flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Brand logo. - Primary color: #ec1c24
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1UAMYGGnteYeqlflQOa1DXYdYuVYLTreX3kKc3bePJYm3znfN_iH2BUt3j_nYZy0rYDojQxqlpQVujpfjo77uUD1czFbbiGR8xa3vdmxWC87N0WFGG2sGwilGRQSXpBjM7RXSP3dZmKl6BDBGkV_aj84kwKwsHSM15zlmJslDn5x25jsbZcXNoIA-AkWzjE2ibgt1eUIvIhcAbMcnCgA0IU7Tz_hwdnBuss8jVMrzcpuatmZrqjkCR708JG"/><div class="flex flex-col min-w-0"><span class="text-[10px] font-label-sm uppercase tracking-wider text-secondary leading-none">Growth Loop</span><button class="flex items-center gap-1 group text-left min-w-0 mt-0.5"><span class="font-title-md text-body-md font-semibold text-on-surface truncate max-w-[130px]">Kopi Sinar Pagi</span><span class="material-symbols-outlined text-[16px] text-secondary group-hover:text-primary transition-colors flex-shrink-0">expand_more</span></button></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center rounded-full text-secondary hover:text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary ring-2 ring-surface"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm ml-1 flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Interactive Feedback & Celebration Modal (Hidden initially) -->
+<div class="hidden fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-inverse-surface/60 backdrop-blur-sm p-space-md" id="actionModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-sm w-full p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">auto_fix_high</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Mempersiapkan Siklus Lanjutan</span>
+<p class="font-body-md text-body-md text-secondary">Sistem AI sedang menyesuaikan template voucer diskon jam sibuk di DigiPOS dan menjadwalkan notifikasi radius 2 km BSD.</p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-title-md">check_circle</span>
+<span class="font-label-md text-label-md text-on-surface">Paket menu bundling Rp28.000 terpasang di kasir</span>
+</div>
+<button class="w-full h-11 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center transition-opacity hover:opacity-90" onclick="toggleActionModal(false)">
+        Tutup &amp; Terapkan
+      </button>
+</div>
+</div>
+<!-- Header Sub-bar & Status -->
+<section class="px-space-md pt-space-md pb-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-space-xs flex-wrap">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-primary">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Evaluasi Kinerja AI · Siklus 1</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-label-sm">Tier Silver · Terverifikasi</span>
+</div>
+</div>
+<div class="mt-space-xs">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold tracking-tight">
+        Evaluasi Kinerja Kampanye AI
+      </h1>
+<p class="font-body-md text-body-md text-secondary mt-1">
+        Ringkasan cerdas performa toko Anda dari data riil kasir DigiPOS dan sinyal MyAds Telkomsel.
+      </p>
+</div>
+</section>
+<!-- Sorotan Hambatan Utama (Bottleneck Highlight Card) -->
+<section class="px-space-md mt-space-sm">
+<div class="bg-gradient-to-br from-error-container/60 via-surface-container-low to-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="flex items-center gap-1.5 mb-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">priority_high</span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wide">
+          Hambatan Utama: Konversi Penjualan Belum Optimal
+        </span>
+</div>
+<p class="font-title-md text-title-md text-on-surface font-semibold mt-1">
+        Jangkauan iklan meluas drastis, namun konversi penjualan masih tertahan di bawah target kedai.
+      </p>
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container-lowest/80 backdrop-blur-sm flex flex-col gap-space-xs">
+<div class="flex items-baseline justify-between">
+<span class="font-body-sm text-body-sm text-secondary">Tingkat Penukaran Kupon</span>
+<span class="font-metric-numeral text-headline-sm text-primary font-bold">3.4% <span class="font-body-sm text-body-sm text-secondary font-normal">/ target 5.0%</span></span>
+</div>
+<!-- Progress representation without borders -->
+<div class="w-full h-2 rounded-full bg-secondary-fixed overflow-hidden flex">
+<div class="bg-primary h-full rounded-full" style="width: 68%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-secondary leading-relaxed mt-1">
+          Dari jangkauan <strong class="text-on-surface">24.500 pelanggan potensial</strong> BSD, hanya 3.4% yang menukar kupon di kasir. Estimasi potensi omzet yang belum terserap: <span class="text-primary font-semibold">~Rp1.350.000</span>.
+        </p>
+</div>
+<div class="flex items-center gap-space-xs mt-space-sm flex-wrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+          Estimasi AI
+        </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+          Data Terhubung DigiPOS
+        </span>
+</div>
+</div>
+</section>
+<!-- Visual Insight Banner with Image Placeholder -->
+<section class="px-space-md mt-space-md">
+<div class="relative w-full h-36 rounded-xl overflow-hidden shadow-sm flex items-end p-space-md">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Warm ambient scene inside a cozy Indonesian specialty coffee shop in BSD Serpong. Wooden counters, gleaming espresso machine, smiling young Indonesian barista preparing a pour-over coffee, warm soft morning sunlight, rich mahogany and Telkomsel red decorative accents, highly professional commercial photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPx7uCIWWJ3z6eeMXX5GHzZDL-a287JbD6-TCBwSluWcN5G30wBrhDut8QsgBY0e6kxmUWyZIDQKJz1nW0VRyYJW1TbD_d7aKDgBV559TsOHt2Kf-a62htg5KyygIbEKwkych3sDJ-qn8D6k_OQo1AaKkCfl_hrvO2ATlIyeYhk0rjgX5k8mIxM0unK5QrwcYodRKU1fnv2UWGnOIH7xkf2IAm64Dvjg1mSC3RQ_aYVMEYL4M5bE1Epw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/40 to-transparent"></div>
+<div class="relative z-10 flex flex-col text-on-tertiary">
+<span class="font-label-sm text-label-sm text-tertiary-fixed font-semibold tracking-wider uppercase">Analisis Lapangan Kedai</span>
+<p class="font-title-md text-title-md font-semibold text-surface-container-lowest">Kopi Sinar Pagi BSD · Ruko Golden Boulevard</p>
+</div>
+</div>
+</section>
+<!-- Tiga Blok Analisis AI Utama -->
+<section class="px-space-md mt-space-md flex flex-col gap-space-md">
+<!-- 1. Yang Berjalan Sangat Baik (What Worked) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<div class="w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface font-bold">Yang Berjalan Sangat Baik</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-primary-fixed/50 px-2 py-0.5 rounded-full font-semibold">Tepat Sasaran</span>
+</div>
+<div class="mt-space-xs">
+<div class="flex items-baseline gap-2">
+<span class="font-metric-numeral text-headline-sm text-on-surface font-extrabold">+34%</span>
+<span class="font-body-md text-body-md text-secondary">Peningkatan Jangkauan Iklan</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-relaxed">
+          Total 24.500 nomor pelanggan dalam radius 2 km BSD tercapai. Pelanggan sekitar menyadari keberadaan kedai Kopi Sinar Pagi lebih cepat berkat sinyal lokasi LBS Telkomsel.
+        </p>
+</div>
+<div class="flex items-center gap-space-xs mt-space-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-low text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-primary">cell_tower</span>
+          Riil MyAds Telkomsel
+        </span>
+</div>
+</div>
+<!-- 2. Yang Perlu Diperbaiki (What Didn't) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[16px]">sync_problem</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface font-bold">Yang Perlu Diperbaiki</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-tertiary-fixed-variant bg-tertiary-fixed px-2 py-0.5 rounded-full font-semibold">Perlu Evaluasi</span>
+</div>
+<div class="mt-space-xs">
+<div class="flex items-baseline gap-2">
+<span class="font-metric-numeral text-headline-sm text-on-surface font-extrabold">3.0% → 3.4%</span>
+<span class="font-body-md text-body-md text-secondary">(+0.4 pp vs target 5.0%)</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-relaxed">
+          Pembeli yang melihat promo belum semuanya mampir. Tawaran diskon jam santai belum cukup menggoda saat jam sibuk siang hari (11.30 - 13.30 WIB).
+        </p>
+</div>
+<div class="flex items-center gap-space-xs mt-space-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-low text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] text-primary">point_of_sale</span>
+          Riil Kasir DigiPOS
+        </span>
+</div>
+</div>
+<!-- 3. Langkah Tindakan Lanjutan AI (Next Action) -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[16px]">smart_toy</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface font-bold">Rekomendasi Cerdas AI</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold bg-surface-container-lowest px-2 py-0.5 rounded-full">Prioritas Tinggi</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-medium leading-relaxed">
+        "Optimalkan paket bundling menu (Kopi Susu Gula Aren + Roti Bakar) dan permudah klaim kasir DigiPOS sebelum menambah anggaran kuota iklan MyAds."
+      </p>
+<div class="flex flex-col gap-1.5 pt-1">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-lowest">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">menu_book</span>
+<span class="font-label-md text-label-md text-on-surface">Kuncie Modul Promo Menarik</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded-full">Termasuk (Rp0)</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-lowest">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">speaker_phone</span>
+<span class="font-label-md text-label-md text-on-surface">Soundbox QRIS Telkomsel</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold bg-primary-fixed/50 px-2 py-0.5 rounded-full">Aktivasi Cepat</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs mt-0.5">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]">lightbulb</span>
+          Rekomendasi AI Terarah
+        </span>
+</div>
+</div>
+</section>
+<!-- Single Primary CTA di Blok Evaluasi -->
+<section class="px-space-md mt-space-lg flex flex-col items-center text-center gap-space-xs">
+<button class="w-full h-11 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-md hover:bg-primary-container active:scale-[0.99] transition-all flex items-center justify-center gap-2" onclick="toggleActionModal(true)">
+<span>Lihat Langkah Tindakan Lanjutan</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<p class="font-body-sm text-body-sm text-secondary">
+      Otomatis menyiapkan penyesuaian promo di DigiPOS untuk pekan depan.
+    </p>
+</section>
+<!-- Kartu Pembaruan Skor Pertumbuhan (Growth Score Update Card: 68 -> 74) -->
+<section class="px-space-md mt-space-xl">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Indeks Pertumbuhan Toko</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Skor Pertumbuhan AI</h2>
+</div>
+<div class="flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>+6 Poin!</span>
+</div>
+</div>
+<!-- Score Gauge & Visual Progression -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary">Skor Siklus Lalu</span>
+<span class="font-metric-numeral text-headline-sm text-secondary line-through font-bold">68</span>
+<span class="font-label-sm text-label-sm text-secondary">Tier Bronze</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Skor Baru Terkini</span>
+<span class="font-metric-numeral text-display-lg-mobile text-primary font-extrabold leading-none">74</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold bg-surface-container-highest px-2 py-0.5 rounded-full mt-1">Tier Silver</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface rounded-lg">
+<p class="font-body-md text-body-md text-on-surface">
+<strong>Selamat Aisha!</strong> Toko Kopi Sinar Pagi resmi naik ke <strong>Tier Silver</strong>, tinggal 6 poin lagi menuju Tier Gold untuk fasilitas pendampingan bisnis prioritas.
+        </p>
+</div>
+<!-- Breakdown Alasan Kenaikan Skor -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-title-md text-title-md text-on-surface font-bold">Rincian Perolehan Poin Siklus 1</span>
+<!-- Factor 1: Acquisition -->
+<div class="flex flex-col gap-1 p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">1. Akuisisi Pelanggan Baru</span>
+<span class="font-label-md text-label-md text-primary font-bold">+4 Poin</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 80%;"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm mt-0.5">
+<span class="text-secondary font-body-sm">Menarik 145 pembeli baru ke kedai</span>
+<span class="text-primary font-label-sm font-semibold">Riil MyAds</span>
+</div>
+</div>
+<!-- Factor 2: Conversion -->
+<div class="flex flex-col gap-1 p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">2. Konversi Penjualan Kasir</span>
+<span class="font-label-md text-label-md text-primary font-bold">+3 Poin</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 60%;"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm mt-0.5">
+<span class="text-secondary font-body-sm">Kenaikan efisiensi penukaran voucer</span>
+<span class="text-primary font-label-sm font-semibold">Riil DigiPOS</span>
+</div>
+</div>
+<!-- Factor 3: Marketing -->
+<div class="flex flex-col gap-1 p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">3. Pemasaran Digital Terarah</span>
+<span class="font-label-md text-label-md text-primary font-bold">+1 Poin</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 25%;"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm mt-0.5">
+<span class="text-secondary font-body-sm">Konsistensi promosi di radius 2 km BSD</span>
+<span class="text-secondary font-label-sm font-semibold">Connected data</span>
+</div>
+</div>
+<!-- Factor 4: Retention (Bottleneck) -->
+<div class="flex flex-col gap-1 p-space-sm rounded-lg bg-surface-container-high">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">4. Retensi &amp; Repeat Order</span>
+<span class="font-label-md text-label-md text-secondary font-bold">0 Poin</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-secondary-container overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 5%;"></div>
+</div>
+<div class="flex items-center justify-between text-body-sm mt-0.5">
+<span class="text-on-surface-variant font-body-sm">Belum ada kenaikan repeat order signifikan</span>
+<span class="text-primary font-label-sm font-semibold">Fokus Siklus Depan</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Solusi Telkomsel Terhubung & Transparansi Biaya -->
+<section class="px-space-md mt-space-lg flex flex-col gap-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">hub</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Solusi Terhubung &amp; Transparansi Biaya</h3>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+      Rincian status integrasi alat operasional kedai pada siklus berjalan.
+    </p>
+<div class="mt-space-xs flex flex-col gap-2">
+<!-- Item 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">point_of_sale</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">DigiPOS Cloud Kasir</span>
+<span class="font-body-sm text-body-sm text-secondary">Sinkronisasi transaksi otomatis</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold bg-surface-container-low px-2.5 py-1 rounded-full">
+          Termasuk di Paket (Rp0)
+        </span>
+</div>
+<!-- Item 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">sms</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">MyAds SMS &amp; RCS</span>
+<span class="font-body-sm text-body-sm text-secondary">Pesan tertarget radius BSD</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2.5 py-1 rounded-full">
+          Sisa Kuota Aktif
+        </span>
+</div>
+<!-- Item 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">school</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Modul Edukasi Kuncie</span>
+<span class="font-body-sm text-body-sm text-secondary">Panduan bundling kopi UMKM</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold bg-surface-container-low px-2.5 py-1 rounded-full">
+          Termasuk di Paket (Rp0)
+        </span>
+</div>
+</div>
+</section>
+<!-- Jaminan Keamanan & Regulasi -->
+<section class="px-space-md mt-space-lg mb-space-sm">
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-space-xs text-center items-center">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Privasi &amp; Kepatuhan Standar Industri</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary leading-relaxed">
+        Standar enkripsi ISO 27001 Telkomsel Enterprise &amp; Kepatuhan Bank Indonesia QRIS. Semua data ditandai sebagai <em>Data Sampel Simulasi</em> untuk demonstrasi operasional kedai.
+      </p>
+</div>
+</section>
+</div>
+<script>
+  function toggleActionModal(show) {
+    const modal = document.getElementById('actionModal');
+    if (modal) {
+      if (show) {
+        modal.classList.remove('hidden');
+      } else {
+        modal.classList.add('hidden');
+      }
+    }
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary [&amp;&gt;div:first-child]:bg-primary-fixed/50 [&amp;&gt;div:first-child]:text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex-1 flex flex-col items-center justify-center py-1 text-secondary hover:text-on-surface transition-colors min-h-[44px]" data-path="overview" href="#"><div class="w-10 h-7 rounded-full flex items-center justify-center transition-all"><span class="material-symbols-outlined text-[22px]">analytics</span></div><span class="font-label-sm text-[11px] leading-tight mt-0.5 tracking-tight">Ringkasan</span></a><a class="flex-1 flex flex-col items-center justify-center py-1 text-secondary hover:text-on-surface transition-colors min-h-[44px]" data-path="missions" href="#"><div class="w-10 h-7 rounded-full flex items-center justify-center transition-all"><span class="material-symbols-outlined text-[22px]">task_alt</span></div><span class="font-label-sm text-[11px] leading-tight mt-0.5 tracking-tight">Misi</span></a><a class="flex-1 flex flex-col items-center justify-center py-1 text-secondary hover:text-on-surface transition-colors min-h-[44px]" data-path="solutions" href="#"><div class="w-10 h-7 rounded-full flex items-center justify-center transition-all"><span class="material-symbols-outlined text-[22px]">hub</span></div><span class="font-label-sm text-[11px] leading-tight mt-0.5 tracking-tight">Solusi</span></a><a class="flex-1 flex flex-col items-center justify-center py-1 text-secondary hover:text-on-surface transition-colors min-h-[44px]" data-path="rewards" href="#"><div class="w-10 h-7 rounded-full flex items-center justify-center transition-all"><span class="material-symbols-outlined text-[22px]">featured_seasonal_and_gifts</span></div><span class="font-label-sm text-[11px] leading-tight mt-0.5 tracking-tight">Hadiah</span></a><a class="flex-1 flex flex-col items-center justify-center py-1 text-secondary hover:text-on-surface transition-colors min-h-[44px]" data-path="more" href="#"><div class="w-10 h-7 rounded-full flex items-center justify-center transition-all"><span class="material-symbols-outlined text-[22px]">grid_view</span></div><span class="font-label-sm text-[11px] leading-tight mt-0.5 tracking-tight">Lainnya</span></a></div></nav></body></html>

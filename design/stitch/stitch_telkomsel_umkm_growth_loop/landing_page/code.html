@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline": "#936e6a", "outline-variant": "#e8bcb7", "inverse-on-surface": "#eaf1ff", "surface-container-high": "#dce9ff", "surface-bright": "#f8f9ff", "on-secondary-fixed": "#191c22", "on-primary": "#ffffff", "surface-container": "#e5eeff", "secondary": "#5c5e65", "on-tertiary-fixed-variant": "#5c4200", "secondary-container": "#dedfe8", "on-error": "#ffffff", "on-tertiary-fixed": "#261900", "primary-container": "#e71621", "on-background": "#0b1c30", "error-container": "#ffdad6", "tertiary": "#775700", "surface-variant": "#d3e4fe", "primary-fixed-dim": "#ffb4ab", "surface": "#f8f9ff", "surface-container-low": "#eff4ff", "inverse-primary": "#ffb4ab", "on-surface": "#0b1c30", "background": "#f8f9ff", "secondary-fixed": "#e1e2ea", "on-surface-variant": "#5e3f3c", "on-primary-fixed": "#410002", "primary-fixed": "#ffdad6", "on-tertiary-container": "#fffbff", "on-secondary": "#ffffff", "surface-tint": "#c00014", "on-primary-fixed-variant": "#93000d", "on-primary-container": "#fffbff", "surface-dim": "#cbdbf5", "on-error-container": "#93000a", "surface-container-lowest": "#ffffff", "on-tertiary": "#ffffff", "error": "#ba1a1a", "tertiary-fixed-dim": "#f2bf50", "tertiary-container": "#966e00", "on-secondary-fixed-variant": "#44474d", "secondary-fixed-dim": "#c4c6ce", "tertiary-fixed": "#ffdea2", "surface-container-highest": "#d3e4fe", "primary": "#bb0013", "on-secondary-container": "#60626a", "inverse-surface": "#213145" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-sm": "1rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin": "2rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-md": "1rem", "gutter": "1.5rem", "gutter-sm": "1rem" }, fontFamily: { "metric-numeral": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "label-md": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "display-lg-mobile": ["Plus Jakarta Sans"] }, fontSize: { "metric-numeral": ["28px", { lineHeight: "34px", letterSpacing: "-0.03em", fontWeight: "800" }], "body-sm": ["12px", { lineHeight: "18px", fontWeight: "400" }], "body-md": ["14px", { lineHeight: "22px", fontWeight: "400" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "700" }], "title-md": ["16px", { lineHeight: "24px", fontWeight: "600" }], "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "600" }], "body-lg": ["16px", { lineHeight: "26px", fontWeight: "400" }], "label-md": ["13px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "600" }], "display-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.03em", fontWeight: "600" }], "display-lg-mobile": ["30px", { lineHeight: "38px", letterSpacing: "-0.01em", fontWeight: "700" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background text-on-surface font-body-md text-body-md antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-sm flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #ec1c24
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UAMYGGnteYeqlflQOa1DXYdYuVYLTreX3kKc3bePJYm3znfN_iH2BUt3j_nYZy0rYDojQxqlpQVujpfjo77uUD1czFbbiGR8xa3vdmxWC87N0WFGG2sGwilGRQSXpBjM7RXSP3dZmKl6BDBGkV_aj84kwKwsHSM15zlmJslDn5x25jsbZcXNoIA-AkWzjE2ibgt1eUIvIhcAbMcnCgA0IU7Tz_hwdnBuss8jVMrzcpuatmZrqjkCR708JG"/><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface leading-tight tracking-tight">Growth Loop</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Telkomsel UMKM</span></div></div><div class="flex items-center gap-space-sm"><a class="h-11 px-space-md rounded-full flex items-center justify-center font-label-md text-label-md text-on-surface hover:text-primary transition-colors" data-path="login" href="#">Masuk</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-background pt-16 flex flex-col"><div class="flex flex-col w-full">
+<div class="px-gutter-sm pt-space-md pb-space-lg flex flex-col gap-space-lg">
+<!-- Top Eyebrow Chip -->
+<div class="inline-flex items-center gap-2 self-start bg-surface-container-high px-3 py-1.5 rounded-full">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">
+        TELKOMSEL BUSINESS GROWTH OS · SAMPLE DATA PREVIEW
+      </span>
+</div>
+<!-- Hero Typography & CTAs -->
+<div class="flex flex-col gap-space-sm">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface leading-tight tracking-tight">
+        Turn Your Digital Adoption Into Business Growth.
+      </h1>
+<p class="font-body-lg text-body-lg text-secondary">
+        Find your biggest business bottleneck, get relevant recommendations, take action with Telkomsel solutions, and measure the impact.
+      </p>
+</div>
+<!-- CTA Group -->
+<div class="flex flex-col gap-space-sm">
+<a class="h-12 w-full rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-space-xs shadow-md active:scale-[0.99] transition-transform" href="#">
+<span>Start My Growth Journey</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="h-12 w-full rounded-full bg-surface-container-high text-primary font-label-md text-label-md flex items-center justify-center hover:bg-surface-container transition-colors" href="#how-it-works">
+        See How It Works
+      </a>
+</div>
+<!-- Interactive Hero Graphic: Diagnostic Card -->
+<div class="w-full bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]">troubleshoot</span>
+<span class="font-title-md text-title-md text-on-surface">Live Diagnostic Snapshot</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container-high text-secondary">
+          Sample Data
+        </span>
+</div>
+<!-- Growth Score Gauge Grid -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Indeks Pertumbuhan Bisnis</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-metric-numeral text-metric-numeral text-on-surface">68</span>
+<span class="font-title-md text-title-md text-secondary">/100</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary mt-0.5">Skor Agregat 6 Dimensi</span>
+</div>
+<!-- Inline SVG Gauge (DELIGHT/RICHNESS) -->
+<div class="relative w-20 h-20 flex items-center justify-center shrink-0">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 72 72">
+<circle class="stroke-surface-container" cx="36" cy="36" fill="transparent" r="30" stroke-width="6"></circle>
+<circle class="stroke-primary" cx="36" cy="36" fill="transparent" r="30" stroke-dasharray="188.4" stroke-dashoffset="60.3" stroke-linecap="round" stroke-width="6"></circle>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-[22px]">trending_up</span>
+</div>
+</div>
+</div>
+<!-- Strongest Area Pill -->
+<div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-tertiary">verified</span>
+<span class="font-body-sm text-body-sm font-semibold">Strongest Area: Digital Presence (82/100)</span>
+</div>
+<!-- BIGGEST BOTTLENECK CARD -->
+<div class="rounded-xl p-space-md bg-error-container flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-on-error-container flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">error</span>
+            BIGGEST BOTTLENECK · HIGH PRIORITY
+          </span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-lowest text-error font-bold">
+            Gap -8%
+          </span>
+</div>
+<div class="mt-1">
+<h4 class="font-title-md text-title-md text-on-error-container">Customer Retention (48/100)</h4>
+<p class="font-body-sm text-body-sm text-on-error-container opacity-90 mt-0.5">
+            Repeat customer 22% · Target acuan industri 30%
+          </p>
+</div>
+<!-- Badges inside Bottleneck -->
+<div class="flex flex-wrap items-center gap-2 mt-2">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-surface-container-lowest text-on-surface flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Connected Data
+          </span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant">
+            Estimated
+          </span>
+</div>
+<div class="mt-2 pt-2 bg-surface-container-lowest/60 p-2.5 rounded-lg flex items-center justify-between gap-2">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">bolt</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">
+              Solusi Disarankan: <strong>Telkomsel RCS Business</strong>
+</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2: 5-STEP GROWTH LOOP -->
+<div class="px-gutter-sm py-space-xl bg-surface-container-low flex flex-col gap-space-lg" id="how-it-works">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Sistematis &amp; Terukur</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">The Continuous 5-Step Growth Loop</h2>
+<p class="font-body-md text-body-md text-secondary">
+        Bukan sekadar adopsi alat digital baru, tapi siklus pertumbuhan operasional yang berulang secara presisi.
+      </p>
+</div>
+<!-- Stepper Pipeline -->
+<div class="flex flex-col relative pl-4">
+<!-- Continuous loop track line -->
+<div class="absolute left-7 top-4 bottom-8 w-0.5 bg-surface-container-highest"></div>
+<!-- Step 1 -->
+<div class="flex items-start gap-space-md relative pb-space-lg">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-metric-numeral text-label-md shrink-0 shadow-sm z-10">
+          1
+        </div>
+<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Diagnose</span>
+<span class="material-symbols-outlined text-primary text-[18px]">query_stats</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-1">
+            Temukan bottleneck utama lewat agregasi data kasir POS &amp; survei 15 pertanyaan diagnostik terpandu.
+          </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex items-start gap-space-md relative pb-space-lg">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-metric-numeral text-label-md shrink-0 z-10">
+          2
+        </div>
+<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Activate</span>
+<span class="material-symbols-outlined text-primary text-[18px]">play_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-1">
+            Jalankan solusi terkurasi Telkomsel &amp; mitra yang langsung menyasar akar hambatan omzet.
+          </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-start gap-space-md relative pb-space-lg">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-metric-numeral text-label-md shrink-0 z-10">
+          3
+        </div>
+<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Measure</span>
+<span class="material-symbols-outlined text-primary text-[18px]">monitoring</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-1">
+            Pantau dampaknya pada omzet kas, basket size, dan retensi nyata secara mingguan via dashboard.
+          </p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex items-start gap-space-md relative pb-space-lg">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-metric-numeral text-label-md shrink-0 z-10">
+          4
+        </div>
+<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Improve</span>
+<span class="material-symbols-outlined text-primary text-[18px]">auto_fix_high</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-1">
+            Optimalkan SOP dan konversi berdasarkan rekomendasi cerdas AI engine Telkomsel.
+          </p>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="flex items-start gap-space-md relative">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-metric-numeral text-label-md shrink-0 z-10">
+          5
+        </div>
+<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Grow</span>
+<span class="material-symbols-outlined text-primary text-[18px]">military_tech</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-1">
+            Naik tier dari Productive ke Scaling dan raih reward diskon kuota bisnis serta modal usaha.
+          </p>
+</div>
+</div>
+</div>
+<!-- Delight Repeat Loop Badge -->
+<div class="flex items-center justify-center gap-2 p-space-md rounded-2xl bg-surface-container-highest text-on-surface shadow-sm">
+<span class="material-symbols-outlined text-primary text-[20px] animate-spin">refresh</span>
+<span class="font-label-md text-label-md font-semibold">
+        Repeat Loop: Siklus berputar otomatis setiap pekan
+      </span>
+</div>
+</div>
+<!-- SECTION 3: THE REAL UMKM PROBLEM -->
+<div class="px-gutter-sm py-space-xl flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="w-10 h-10 rounded-full bg-error-container text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">crisis_alert</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">
+          Already using digital tools, but not sure they actually grow your business?
+        </h3>
+<p class="font-body-md text-body-md text-secondary">
+          Kebanyakan UMKM sudah pakai QRIS, medsos, dan marketplace, tapi omzet tetap mandek karena adopsi digital tidak dihubungkan langsung dengan penyelesaian bottleneck spesifik.
+        </p>
+</div>
+<!-- Micro-stats -->
+<div class="grid grid-cols-1 gap-space-sm pt-space-xs">
+<!-- Stat Card 1 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-metric-numeral text-metric-numeral text-primary">78%</span>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container text-secondary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Connected data
+            </span>
+</div>
+<span class="font-body-md text-body-md font-medium text-on-surface">
+            Pembeli pertama tidak kembali berbelanja
+          </span>
+<span class="font-body-sm text-body-sm text-secondary">
+            Kelemahan terbesar retensi yang sering diabaikan pedagang lokal.
+          </span>
+</div>
+<!-- Stat Card 2 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-metric-numeral text-metric-numeral text-tertiary">4,2x</span>
+<span class="font-label-sm text-label-sm px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant">
+              Estimated
+            </span>
+</div>
+<span class="font-body-md text-body-md font-medium text-on-surface">
+            Biaya akuisisi lebih mahal dibanding retensi
+          </span>
+<span class="font-body-sm text-body-sm text-secondary">
+            Terus beriklan tanpa sistem loyalitas menguras margin operasional.
+          </span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 4: FIVE VALUE PILLARS -->
+<div class="px-gutter-sm py-space-xl bg-surface-container-low flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Keunggulan Inti</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">
+        5 Cara Growth Loop Mengakselerasi Usaha Anda
+      </h2>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Pillar 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">analytics</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-title-md text-title-md text-on-surface">1. Know your business</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+            Pahami skor kesehatan usaha secara komprehensif dari 6 dimensi operasional tanpa perlu hitungan rumit.
+          </p>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">center_focus_strong</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-title-md text-title-md text-on-surface">2. Know your bottleneck</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+            Langsung tahu 1 masalah terbesar yang menghambat kenaikan omzet minggu ini agar fokus tidak terpecah.
+          </p>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">psychology</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-title-md text-title-md text-on-surface">3. Know what to do</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+            Rekomendasi aksi terarah berbasis AI tanpa perlu menebak-nebak strategi promosi atau distribusi.
+          </p>
+</div>
+</div>
+<!-- Pillar 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">balance</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-title-md text-title-md text-on-surface">4. Measure the impact</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+            Pantau perubahan nyata (Before vs After) pada arus kas, repeat order, dan margin keuntungan bersih.
+          </p>
+</div>
+</div>
+<!-- Pillar 5 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">rocket_launch</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-title-md text-title-md text-on-surface">5. Grow continuously</h4>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">
+            Raih level progression, diskon reward iklan, dan akses kurasi program DCE Telkomsel Enterprise.
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 5: TELKOMSEL SOLUTION ECOSYSTEM STRIP -->
+<div class="px-gutter-sm py-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Orchestrator Resmi Telkomsel</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">
+        Solusi Terintegrasi yang Siap Diaktivasi Sesuai Kebutuhan
+      </h2>
+<p class="font-body-sm text-body-sm text-secondary">
+        Konektivitas dan platform spesifik yang dihubungkan langsung sesuai diagnosis siklus pertumbuhan Anda.
+      </p>
+</div>
+<!-- Ecosystem Clean Tiles -->
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Kuncie -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Kuncie</span>
+<span class="font-body-sm text-body-sm text-secondary">Learn · Pelatihan Barista &amp; Kasir</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-tertiary font-medium shrink-0">
+          Included in plan
+        </span>
+</div>
+<!-- MyAds -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">MyAds</span>
+<span class="font-body-sm text-body-sm text-secondary">Acquisition · SMS &amp; LBS Targeted</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-medium shrink-0">
+          Additional usage
+        </span>
+</div>
+<!-- UMKM Plus -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">UMKM Plus</span>
+<span class="font-body-sm text-body-sm text-secondary">Connectivity · Kuota Bisnis Khusus</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-tertiary font-medium shrink-0">
+          Included in plan
+        </span>
+</div>
+<!-- DigiPOS -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">DigiPOS</span>
+<span class="font-body-sm text-body-sm text-secondary">Sales · Aktivitas &amp; Distribusi Produk</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-tertiary font-medium shrink-0">
+          Included in plan
+        </span>
+</div>
+<!-- DigiAds -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">DigiAds</span>
+<span class="font-body-sm text-body-sm text-secondary">Scale · Solusi Advertising Skala Besar</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-medium shrink-0">
+          Additional usage
+        </span>
+</div>
+<!-- DCE -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">DCE (Digital Creative)</span>
+<span class="font-body-sm text-body-sm text-secondary">Scale · Akselerator Inkubasi UMKM</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-variant text-on-surface font-medium shrink-0">
+          Subject to selection
+        </span>
+</div>
+<!-- MSIGHT -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">MSIGHT</span>
+<span class="font-body-sm text-body-sm text-secondary">Scale · Analitik Pergerakan Pelanggan</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-medium shrink-0">
+          Activation required
+        </span>
+</div>
+<!-- SiteSense -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">SiteSense</span>
+<span class="font-body-sm text-body-sm text-secondary">Scale · Analisis Lokasi &amp; Kepadatan Cabang</span>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-medium shrink-0">
+          Activation required
+        </span>
+</div>
+</div>
+<!-- Ecosystem Note Footer -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-secondary">
+        Platform Telkomsel UMKM Growth Loop bertindak sebagai orchestrator pertumbuhan bisnis. Biaya layanan dan langganan ditampilkan transparan tanpa biaya tersembunyi.
+      </p>
+</div>
+</div>
+<!-- SECTION 6: FINAL CONVERSION BOX -->
+<div class="px-gutter-sm pb-space-lg flex flex-col">
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-md flex flex-col items-center text-center gap-space-md">
+<div class="w-14 h-14 rounded-full bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[32px]">speed</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+          Siap Mengubah Adopsi Digital Menjadi Pertumbuhan Nyata?
+        </h3>
+<p class="font-body-md text-body-md text-secondary">
+          Dapatkan laporan diagnostik 6 dimensi usaha Anda dalam 3 menit tanpa biaya awal.
+        </p>
+</div>
+<div class="flex flex-col w-full gap-space-xs pt-space-xs">
+<button class="h-12 w-full rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-space-xs shadow-md active:scale-[0.98] transition-transform" onclick="handleStartJourney()">
+<span>Start My Growth Journey</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<span class="font-label-sm text-label-sm text-secondary">Rp0 Diagnostik Awal · Tanpa Komitmen</span>
+</div>
+<a class="font-label-sm text-label-sm text-on-surface-variant underline pt-1" href="#">
+        Pelajari Syarat &amp; Ketentuan Program
+      </a>
+<div class="pt-space-sm flex items-center justify-center gap-1.5 text-secondary opacity-75">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span class="font-body-sm text-body-sm text-[11px] text-center">
+          Data terenkripsi dan terlindungi. Sesuai standar tata kelola data Bank Indonesia QRIS &amp; Telkomsel Enterprise Nodes.
+        </span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function handleStartJourney() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script><footer class="w-full bg-surface-container-low px-gutter-sm pt-space-lg pb-space-xl mt-space-xl shadow-[0_-1px_6px_rgba(0,0,0,0.02)]"><div class="flex flex-col gap-space-md max-w-lg mx-auto"><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-primary text-[16px]">verified_user</span><span>Bagian dari Ekosistem Digital Telkomsel Enterprise</span></div><p class="font-body-sm text-body-sm text-secondary">Akselerator pertumbuhan bisnis terintegrasi jaringan telekomunikasi terbesar Indonesia untuk digitalisasi UMKM naik kelas secara terukur dan berkelanjutan.</p><div class="flex flex-wrap gap-x-space-md gap-y-space-xs font-label-sm text-label-sm text-on-surface-variant"><a class="hover:text-primary transition-colors" data-path="syarat-dan-ketentuan" href="#">Syarat &amp; Ketentuan</a><span class="text-outline-variant">•</span><a class="hover:text-primary transition-colors" data-path="kebijakan-privasi" href="#">Kebijakan Privasi</a><span class="text-outline-variant">•</span><a class="hover:text-primary transition-colors" data-path="pusat-bantuan" href="#">Pusat Bantuan UMKM</a></div><div class="bg-surface rounded-xl p-space-sm flex items-center gap-space-sm shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><span class="material-symbols-outlined text-tertiary text-[20px]">account_balance</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface font-semibold">Standar Kepatuhan BI &amp; QRIS Nasional</span><span class="font-body-sm text-body-sm text-secondary text-[11px]">Tersertifikasi keamanan perbankan dan agregasi data mitra resmi.</span></div></div><div class="pt-space-xs text-center font-body-sm text-body-sm text-secondary"><p>© 2025 PT Telekomunikasi Selular (Telkomsel). Hak Cipta Dilindungi Undang-Undang.</p></div></div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_16px_rgba(0,0,0,0.06)]" data-active-classes="bg-primary text-on-primary"><div class="h-20 px-gutter-sm flex items-center justify-between gap-space-sm max-w-lg mx-auto"><a class="flex-1 h-11 rounded-full bg-primary flex items-center justify-center gap-space-xs text-on-primary font-label-md text-label-md shadow-[0_2px_8px_rgba(187,0,19,0.25)] hover:bg-primary-container transition-all active:scale-[0.99]" data-path="program-overview" href="#"><span class="material-symbols-outlined text-[18px]">rocket_launch</span><span>Mulai Siklus Pertumbuhan</span></a></div></nav></body></html>

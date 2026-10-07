@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "tertiary-fixed-dim": "#f2bf50", "on-primary-container": "#fffbff", "surface-tint": "#c00014", "on-tertiary-container": "#fffbff", "on-tertiary-fixed": "#261900", "inverse-on-surface": "#eaf1ff", "on-secondary-fixed-variant": "#44474d", "inverse-surface": "#213145", "on-background": "#0b1c30", "inverse-primary": "#ffb4ab", "outline": "#936e6a", "error": "#ba1a1a", "primary": "#bb0013", "tertiary-fixed": "#ffdea2", "on-secondary-fixed": "#191c22", "on-surface": "#0b1c30", "surface-container-highest": "#d3e4fe", "primary-fixed": "#ffdad6", "on-secondary-container": "#60626a", "primary-container": "#e71621", "surface-variant": "#d3e4fe", "on-tertiary-fixed-variant": "#5c4200", "background": "#f8f9ff", "surface-dim": "#cbdbf5", "tertiary": "#775700", "surface-bright": "#f8f9ff", "surface": "#f8f9ff", "on-tertiary": "#ffffff", "on-primary-fixed": "#410002", "outline-variant": "#e8bcb7", "surface-container-high": "#dce9ff", "secondary-container": "#dedfe8", "on-error": "#ffffff", "on-error-container": "#93000a", "secondary-fixed": "#e1e2ea", "error-container": "#ffdad6", "secondary": "#5c5e65", "on-primary": "#ffffff", "on-surface-variant": "#5e3f3c", "on-secondary": "#ffffff", "primary-fixed-dim": "#ffb4ab", "on-primary-fixed-variant": "#93000d", "secondary-fixed-dim": "#c4c6ce", "surface-container-lowest": "#ffffff", "surface-container-low": "#eff4ff", "tertiary-container": "#966e00", "surface-container": "#e5eeff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-lg": "1.5rem", "margin-sm": "1rem", "space-sm": "0.5rem", "margin": "2rem", "space-xl": "2.5rem", "space-md": "1rem", "gutter-sm": "1rem", "gutter": "1.5rem" }, fontFamily: { "body-lg": ["Inter"], "title-md": ["Plus Jakarta Sans"], "metric-numeral": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"] }, fontSize: { "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "metric-numeral": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-sm flex items-center justify-between"><div class="flex items-center gap-space-xs min-w-0"><button aria-label="Kembali" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-low transition-colors -ml-space-xs" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><img alt="Brand logo. - Primary color: #ec1c24
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-7 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1UAMYGGnteYeqlflQOa1DXYdYuVYLTreX3kKc3bePJYm3znfN_iH2BUt3j_nYZy0rYDojQxqlpQVujpfjo77uUD1czFbbiGR8xa3vdmxWC87N0WFGG2sGwilGRQSXpBjM7RXSP3dZmKl6BDBGkV_aj84kwKwsHSM15zlmJslDn5x25jsbZcXNoIA-AkWzjE2ibgt1eUIvIhcAbMcnCgA0IU7Tz_hwdnBuss8jVMrzcpuatmZrqjkCR708JG"/><h1 class="text-title-md font-title-md text-on-surface truncate ml-space-xs">Detail Solusi: Myads</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Bantuan Layanan" class="w-11 h-11 flex items-center justify-center rounded-full text-secondary hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">help_outline</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="px-gutter-sm py-space-md space-y-space-md">
+<!-- Section 1: Header / Context -->
+<section class="space-y-space-xs">
+<div class="flex items-center gap-space-xs flex-wrap">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+          HAMBATAN TERDETEKSI: AKUISISI PELANGGAN
+        </div>
+<div class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+          Acquisition Engine
+        </div>
+</div>
+<div class="pt-space-xs">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Telkomsel MyAds</h2>
+<p class="font-body-md text-body-md text-secondary mt-1">
+          Mesin penarik pembeli baru tertarget langsung ke nomor ponsel calon pelanggan di sekitar tokomu.
+        </p>
+</div>
+<!-- Quick Trust Banner with Real Image -->
+<div class="relative rounded-xl overflow-hidden bg-surface-container-low p-space-md flex items-center justify-between shadow-sm">
+<div class="space-y-1 max-w-[65%]">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Solusi Teruji UMKM</span>
+<p class="font-title-md text-title-md text-on-surface leading-tight">Diarahkan untuk 1.200+ Usaha F&amp;B Lokal</p>
+</div>
+<img class="w-16 h-16 rounded-lg object-cover shadow-sm flex-shrink-0" data-alt="A smiling Indonesian coffee shop barista standing behind a warm wooden counter holding a smartphone showing sales notifications, ambient warm cafe lighting with espresso machine in background, crisp professional photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLg_zHHE2J4McPyEsu137wnBqemIikMeEvJg75dbMC60ByPw6no2WZH4zMx8GZ4gJ29sdI19IMfZ6VH-mXoX1E0urzxIW1_kf06DvUlCJ5O0rrW8l7dF8JJKZDzt0jzhi-A85fy8ziCXzLTlU9LmF2zZD9B9oRtGTwXbTkBXIgIwqWT7bMrWaNf4y3dir5F0hkBobxQgYg_SNxgAZNx3oNWac3cYy9d9NEhbWU1WhiUzC2dF32G_O3lQ"/>
+</div>
+</section>
+<!-- Section 2: Bottleneck Spotlight Callout -->
+<section class="relative bg-surface-container-lowest rounded-xl p-space-md shadow-sm overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="pl-space-xs space-y-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">warning</span>
+<span class="font-label-md text-label-md text-primary uppercase">Alasan Direkomendasikan</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Akuisisi Pelanggan Di Bawah Target</h3>
+<!-- Comparison Metric Cards -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-secondary">Toko Anda Saat Ini</span>
+<div class="my-space-xs">
+<span class="font-metric-numeral text-metric-numeral text-on-surface">45</span>
+<span class="font-label-sm text-label-sm text-secondary block">Pembeli Baru /bln</span>
+</div>
+<div class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-[10px] w-fit">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Data Riil / Kasir
+            </div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-secondary">Benchmark F&amp;B Sejenis</span>
+<div class="my-space-xs">
+<span class="font-metric-numeral text-metric-numeral text-primary">120</span>
+<span class="font-label-sm text-label-sm text-secondary block">Pembeli Baru /bln</span>
+</div>
+<div class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px] w-fit">
+<span class="material-symbols-outlined text-[10px]">auto_awesome</span>
+              Estimasi AI
+            </div>
+</div>
+</div>
+<!-- Gap Pill Indicator -->
+<div class="bg-error-container rounded-lg px-space-sm py-2 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-error-container text-[18px]">trending_down</span>
+<span class="font-label-md text-label-md text-on-error-container">Gap Pertumbuhan Akuisisi</span>
+</div>
+<span class="font-title-md text-title-md text-on-error-container font-bold">-62% dari ideal</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface pt-space-xs">
+          Toko Anda terlalu bergantung pada pengunjung lewat yang tidak pasti. Iklan SMS lokasi (LBS) MyAds menjangkau ratusan pengguna HP aktif saat berada di radius tokomu.
+        </p>
+</div>
+</section>
+<!-- Section 3: Expected Objective -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">flag</span>
+<h3 class="font-title-md text-title-md text-on-surface">Proyeksi Target Hasil</h3>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm">
+          Simulasi Kopi Sinar Pagi
+        </span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-md space-y-space-sm">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary">Target Pembeli Baru</span>
+<div class="font-headline-md text-headline-md text-primary mt-0.5">+75 s/d +120</div>
+<span class="font-body-sm text-body-sm text-secondary">Pelanggan baru terverifikasi per bulan</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px]">
+            Estimasi AI
+          </span>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary">Potensi Kenaikan Omzet</span>
+<div class="font-title-md text-title-md text-on-surface font-bold text-[18px]">+Rp3.750.000 /bln</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[10px]">
+            Estimasi Analitik
+          </span>
+</div>
+<div class="flex items-center gap-2 pt-space-xs text-secondary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">schedule</span>
+<span>Waktu respon pertama: <strong>1-3 hari</strong> setelah broadcast dikirim</span>
+</div>
+</div>
+</section>
+<!-- Visual Storytelling Feature Graphic -->
+<div class="rounded-xl overflow-hidden shadow-sm bg-surface-container-lowest">
+<img class="w-full h-36 object-cover" data-alt="A smartphone screen showing an incoming promotional discount SMS for a neighborhood bakery shop with clean modern layout, customer holding the phone on an urban Indonesian street with storefront in soft blur behind" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwKYz_LebcHuCsV2l0VL3j4B2n4jOP7uopYXql_5ByP0oQFLHkLRzSmNCDADOkDxaOJ1uWpmJOZbb1apgJoomXT_0Ga-7Hfyai35dxvHV6K_OYIfJ7kvxNUbFdRWaEAFNesBhTDtypBKidg6pzh95qGNEmm_-CQF_dVI94B_IBBRUJdgLndN_5d-_XRogGcFm0dcwZiz0jyMJqQJFiBTczshAxRaya8xlpBdqyAyZnaHG_E3wfObYfrg"/>
+<div class="p-space-sm bg-surface-container-low flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">location_on</span>
+<span class="font-body-sm text-body-sm text-secondary">Jangkau calon pembeli instan dalam radius 1 hingga 3 kilometer.</span>
+</div>
+</div>
+<!-- Section 4: What It Helps -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">stars</span>
+<h3 class="font-title-md text-title-md text-on-surface">Manfaat Nyata untuk Toko Anda</h3>
+</div>
+<div class="space-y-space-sm">
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[18px]">group_add</span>
+</div>
+<div class="space-y-0.5 min-w-0">
+<h4 class="font-title-md text-title-md text-on-surface">Target Calon Pembeli Tertarget</h4>
+<p class="font-body-sm text-body-sm text-secondary">
+              Pilih profil penerima berdasarkan demografi (usia, jenis kelamin, minat kuliner/belanja) tanpa buang biaya iklan ke orang yang salah.
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[18px]">my_location</span>
+</div>
+<div class="space-y-0.5 min-w-0">
+<h4 class="font-title-md text-title-md text-on-surface">Promosi Berbasis Lokasi (LBS)</h4>
+<p class="font-body-sm text-body-sm text-secondary">
+              Kirim SMS promo otomatis ke pengguna Telkomsel yang sedang berada dalam radius 1–3 km dari tokomu secara tepat waktu.
+            </p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[18px]">insights</span>
+</div>
+<div class="space-y-0.5 min-w-0">
+<h4 class="font-title-md text-title-md text-on-surface">Pengukuran Kampanye Transparan</h4>
+<p class="font-body-sm text-body-sm text-secondary">
+              Pantau langsung jumlah SMS terkirim, tingkat respon kupon, dan pengunjung yang datang menukarkan kode ke kasir.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: How to Measure Success -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">speed</span>
+<h3 class="font-title-md text-title-md text-on-surface">Cara Mengukur Hasil Kampanye</h3>
+</div>
+<div class="space-y-space-sm">
+<!-- Metric 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-label-sm text-[11px] font-bold">1</span>
+<span class="font-label-md text-label-md text-on-surface">Jangkauan (Reach)</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px]">Estimasi AI</span>
+</div>
+<div class="font-title-md text-title-md text-on-surface font-bold pl-7">
+            3.500 Calon Pembeli
+          </div>
+<span class="font-body-sm text-body-sm text-secondary pl-7">Dalam radius 2 km dari tokomu</span>
+</div>
+<!-- Metric 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-label-sm text-[11px] font-bold">2</span>
+<span class="font-label-md text-label-md text-on-surface">Respon (Response Rate)</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[10px]">Benchmark Industri</span>
+</div>
+<div class="font-title-md text-title-md text-primary font-bold pl-7">
+            &gt; 18% Tingkat Buka &amp; Klik
+          </div>
+<span class="font-body-sm text-body-sm text-secondary pl-7">Penerima membaca pesan dan membuka tautan voucher</span>
+</div>
+<!-- Metric 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-label-sm text-[11px] font-bold">3</span>
+<span class="font-label-md text-label-md text-on-surface">Peminat / Calon Pembeli</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px]">Estimasi AI</span>
+</div>
+<div class="font-title-md text-title-md text-on-surface font-bold pl-7">
+            45-60 Pelanggan
+          </div>
+<span class="font-body-sm text-body-sm text-secondary pl-7">Menyimpan kupon di dompet digital atau SMS</span>
+</div>
+<!-- Metric 4 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-label-sm text-[11px] font-bold">4</span>
+<span class="font-label-md text-label-md text-on-surface">Konversi Kasir (Sales)</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-[10px]">Target 14 Hari</span>
+</div>
+<div class="font-title-md text-title-md text-primary font-bold pl-7">
+            25-35 Transaksi Riil
+          </div>
+<span class="font-body-sm text-body-sm text-secondary pl-7">Pembayaran tercatat di kasir DigiPOS / QRIS tokomu</span>
+</div>
+</div>
+</section>
+<!-- Section 6: Cost Structure -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">payments</span>
+<h3 class="font-title-md text-title-md text-on-surface">Rincian Biaya Transparan</h3>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+          Platform Growth Loop Anda sudah aktif. Layanan MyAds ini menggunakan aktivasi dan saldo terpisah:
+        </p>
+</div>
+<div class="space-y-space-sm">
+<!-- Cost item 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Biaya Aktivasi Akun</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-[10px]">Aktivasi Tambahan Diperlukan</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">GRATIS</div>
+<p class="font-body-sm text-body-sm text-secondary">Bebas biaya pendaftaran. Akun diverifikasi resmi dalam 15 menit via nomor Telkomsel tokomu.</p>
+</div>
+<!-- Cost item 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Biaya Penggunaan (Usage Cost)</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-[10px]">Biaya Fleksibel Tambahan</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-primary">Mulai Rp25.000 / blast</div>
+<p class="font-body-sm text-body-sm text-secondary">Saldo prabayar tanpa ikatan kontrak bulanan. Isi saldo mudah lewat pulsa Telkomsel, QRIS, atau transfer bank.</p>
+</div>
+<!-- Cost item 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Biaya Platform Bulanan</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-[10px]">Paket Aktif</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Termasuk di Paket Telkomsel Anda</div>
+<p class="font-body-sm text-body-sm text-secondary">Tidak ada biaya langganan bulanan tambahan atau potongan tersembunyi.</p>
+</div>
+</div>
+</section>
+<!-- Section 7: Action Buttons & Assurance Footer -->
+<section class="space-y-space-sm pt-space-xs pb-space-lg">
+<button class="w-full h-11 rounded-full bg-primary hover:bg-[#8e0e15] active:bg-[#600a0e] text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm transition-colors" id="btn-activate-myads" type="button">
+<span>Aktivasi MyAds Sekarang</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<button class="w-full h-11 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center transition-colors" onclick="history.back()" type="button">
+        Bandingkan Alternatif Solusi
+      </button>
+<!-- Reassurance Security Badge -->
+<div class="flex items-start gap-2 pt-space-xs px-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] flex-shrink-0 mt-0.5">verified_user</span>
+<p class="font-body-sm text-body-sm text-secondary">
+          Data usaha terenkripsi &amp; diawasi sesuai kepatuhan regulasi Bank Indonesia dan standar keamanan ISO 27001 Telkomsel.
+        </p>
+</div>
+</section>
+</div>
+<script>
+    document.getElementById('btn-activate-myads')?.addEventListener('click', function() {
+      const btn = this;
+      const originalHtml = btn.innerHTML;
+      btn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[18px]">progress_activity</span><span>Menghubungkan Akun...</span>';
+      btn.disabled = true;
+      
+      setTimeout(() => {
+        btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check_circle</span><span>Siap Diaktivasi! Mengalihkan...</span>';
+        setTimeout(() => {
+          btn.innerHTML = originalHtml;
+          btn.disabled = false;
+        }, 1800);
+      }, 1200);
+    });
+  </script>
+</div></main></body></html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-fixed": "#410002", "surface-container-highest": "#d3e4fe", "on-tertiary-fixed": "#261900", "surface-dim": "#cbdbf5", "on-secondary-fixed-variant": "#44474d", "surface-container-lowest": "#ffffff", "background": "#f8f9ff", "inverse-on-surface": "#eaf1ff", "error": "#ba1a1a", "on-primary": "#ffffff", "outline": "#936e6a", "on-primary-fixed-variant": "#93000d", "secondary-fixed": "#e1e2ea", "surface-tint": "#c00014", "primary": "#bb0013", "on-surface": "#0b1c30", "on-secondary": "#ffffff", "surface-bright": "#f8f9ff", "surface-container-low": "#eff4ff", "on-secondary-container": "#60626a", "inverse-surface": "#213145", "on-background": "#0b1c30", "secondary-container": "#dedfe8", "outline-variant": "#e8bcb7", "on-tertiary-container": "#fffbff", "tertiary-fixed": "#ffdea2", "primary-fixed": "#ffdad6", "on-error-container": "#93000a", "secondary": "#5c5e65", "tertiary-fixed-dim": "#f2bf50", "error-container": "#ffdad6", "on-tertiary": "#ffffff", "on-secondary-fixed": "#191c22", "on-surface-variant": "#5e3f3c", "surface-container-high": "#dce9ff", "on-tertiary-fixed-variant": "#5c4200", "on-error": "#ffffff", "primary-container": "#e71621", "inverse-primary": "#ffb4ab", "tertiary-container": "#966e00", "on-primary-container": "#fffbff", "primary-fixed-dim": "#ffb4ab", "surface-variant": "#d3e4fe", "secondary-fixed-dim": "#c4c6ce", "surface-container": "#e5eeff", "tertiary": "#775700", "surface": "#f8f9ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-sm": "1rem", "space-xs": "0.25rem", "gutter-sm": "1rem", "margin": "2rem", "space-md": "1rem", "space-sm": "0.5rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-xl": "2.5rem" }, fontFamily: { "headline-sm": ["Plus Jakarta Sans"], "label-md": ["Inter"], "body-sm": ["Inter"], "metric-numeral": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "title-md": ["Plus Jakarta Sans"], "body-lg": ["Inter"] }, fontSize: { "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "metric-numeral": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-sm flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Brand logo. - Primary color: #ec1c24
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1UAMYGGnteYeqlflQOa1DXYdYuVYLTreX3kKc3bePJYm3znfN_iH2BUt3j_nYZy0rYDojQxqlpQVujpfjo77uUD1czFbbiGR8xa3vdmxWC87N0WFGG2sGwilGRQSXpBjM7RXSP3dZmKl6BDBGkV_aj84kwKwsHSM15zlmJslDn5x25jsbZcXNoIA-AkWzjE2ibgt1eUIvIhcAbMcnCgA0IU7Tz_hwdnBuss8jVMrzcpuatmZrqjkCR708JG"/><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-secondary truncate uppercase tracking-wider">Telkomsel UMKM</span><span class="font-title-md text-title-md text-on-surface font-bold truncate">Kopi Sinar Pagi</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Notifikasi" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors relative rounded-full hover:bg-surface-container-low"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary-container ring-2 ring-surface-container-lowest"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-28 bg-surface px-margin-sm"><div class="flex flex-col w-full pb-8 space-y-4">
+<!-- Context Breadcrumb & Urgent Bottleneck -->
+<div class="flex flex-col space-y-2">
+<div class="inline-flex items-center gap-1.5 self-start px-3 py-1 rounded-full bg-error-container text-on-error-container">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">Konektivitas Kasir &amp; Operasional Toko</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Koneksi Internet Prioritas Kasir (Telkomsel UMKM Plus)</h1>
+<p class="font-body-md text-body-md text-secondary">
+      Bisnismu saat ini butuh internet stabil tanpa putus untuk mesin kasir DigiPOS, promosi MyAds, dan pembayaran QRIS pelanggan.
+    </p>
+<!-- Operational Risk Banner -->
+<div class="flex items-start gap-3 p-3.5 rounded-xl bg-error-container/60 text-on-error-container">
+<span class="material-symbols-outlined text-[20px] text-error flex-shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">warning</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wide text-error">Bottleneck Terdeteksi</span>
+<span class="font-body-sm text-body-sm font-medium">Risiko Transaksi Gagal saat Jam Sibuk (Makan Siang &amp; Akhir Pekan)</span>
+</div>
+</div>
+</div>
+<!-- Real-world Coffee Shop Ambiance -->
+<div class="relative w-full h-36 rounded-2xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Modern Indonesian coffee shop counter interior named Kopi Sinar Pagi with a sleek wooden espresso bar, DigiPOS tablet terminal on the countertop with QRIS standee, a barista pouring steamed milk in the background, soft ambient morning cafe sunlight, cozy warm tones with subtle Telkomsel red decorative accents on signage, ultra-clean professional commercial photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkz1qC6-CXGtq-AH5FMKVwa61URerE0Da_bMNPPNL4Cb01okzXp_feiSBrPSGKrHI9nrdqDMY2te17Y6AvGhTXpAOwCE-oGnogsCA6t_wflzvo1vWW1qdYtT1MbFgD2EH4oZpoe18a_KUMdbeXeA6oFg0iMJsMtwnCsFZdI6dwHB9eNEzTM6_SQz47nUi1jp5yI6MRfz6g9KnAF6-7spOyPzbShbPmcMa55-3XPyCoLvbrTpo1wbTSNw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-on-surface/20 to-transparent flex items-end p-3.5">
+<div class="flex items-center justify-between w-full">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-fixed"></span>
+<span class="font-label-sm text-label-sm text-surface-container-lowest font-medium">Kopi Sinar Pagi • Cabang BSD Rawa Buntu</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/90 font-label-sm text-label-sm text-primary font-bold">POS Kasir #1</span>
+</div>
+</div>
+</div>
+<!-- Diagnostic Eligibility Card (Cek Kelayakan Jaringan Toko) -->
+<div class="flex flex-col p-4 rounded-2xl bg-surface-container-lowest shadow-sm space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">cell_tower</span>
+</span>
+<span class="font-title-md text-title-md text-on-surface">Cek Kelayakan Jaringan Toko</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+        Prioritas 5G/4G
+      </span>
+</div>
+<!-- Coverage Status Verified -->
+<div class="flex items-center gap-2.5 px-3 py-2 rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-[20px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Lokasi Tercover Jaringan 5G/4G Prioritas Telkomsel</span>
+</div>
+<!-- Diagnostic Details & Telemetry Chips -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div class="flex flex-col p-2.5 rounded-xl bg-surface-container">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">BTS Terdekat</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest font-label-sm text-label-sm text-secondary">Connected</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface mt-1">4 Menara</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Sentra Kuliner BSD</span>
+</div>
+<div class="flex flex-col p-2.5 rounded-xl bg-surface-container">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">Latensi Kasir</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-lowest font-label-sm text-label-sm text-primary font-bold">18 ms</span>
+</div>
+<div class="flex items-center gap-1 mt-1">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-title-md text-title-md text-on-surface">Sangat Cepat</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Ideal untuk QRIS detik</span>
+</div>
+</div>
+<div class="flex items-center justify-between px-3 py-2 rounded-xl bg-surface-container-high text-on-surface">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">speed</span>
+<span class="font-body-sm text-body-sm">Sinyal Rata-rata Toko: <strong class="font-semibold">99.4%</strong></span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-secondary font-label-sm text-label-sm">Estimated data</span>
+</div>
+<div class="p-2.5 rounded-xl bg-primary-fixed text-on-primary-fixed flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-label-sm font-bold">Hasil: Memenuhi Syarat untuk Paket Prioritas UMKM Plus</span>
+</div>
+</div>
+<!-- Recommended Package Spotlight (Silver UMKM Plus) -->
+<div class="flex flex-col p-4 rounded-2xl bg-surface-container-lowest shadow-md space-y-3 relative overflow-hidden">
+<!-- Red Accent Top Bar -->
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-primary"></div>
+<div class="flex items-center justify-between pt-1">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+        Rekomendasi Sesuai Kebutuhan Tokomu
+      </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm">Sample data</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Telkomsel UMKM Plus Silver</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Jalur Prioritas Mesin Kasir &amp; Transaksi Pelanggan</span>
+</div>
+<!-- Pricing Area -->
+<div class="flex items-baseline gap-1.5 p-3 rounded-xl bg-surface-container-low">
+<span class="font-metric-numeral text-metric-numeral text-primary">Rp150.000</span>
+<span class="font-body-sm text-body-sm text-secondary">/ bulan</span>
+<span class="ml-auto font-label-sm text-label-sm text-secondary">Biaya Tambahan Pemakaian</span>
+</div>
+<!-- Feature Value List -->
+<div class="flex flex-col space-y-2.5 pt-1">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-primary flex-shrink-0 mt-0.5">wifi_tethering</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface">50 GB Kuota Bisnis</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold">Connected data</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Kuota Unlimited terpisah khusus DigiPOS, WhatsApp Bisnis &amp; Web QRIS</span>
+</div>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-primary flex-shrink-0 mt-0.5">bolt</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">QoS Prioritas Kasir Anti-Lag</span>
+<span class="font-body-sm text-body-sm text-secondary">Trafik kasir diprioritaskan di atas kuota umum saat BTS padat pengunjung</span>
+</div>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-primary flex-shrink-0 mt-0.5">security_update_good</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Garansi Router Kasir &amp; SIM Card Bisnis</span>
+<span class="font-body-sm text-body-sm text-secondary">Penggantian perangkat gratis dalam 1x24 jam bila ada kendala operasional</span>
+</div>
+</div>
+</div>
+<!-- Primary Action Button (Single Primary Button Rule) -->
+<div class="pt-2 flex flex-col space-y-2">
+<button class="w-full h-12 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold shadow-md hover:bg-primary-container active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+<span>Aktifkan Paket UMKM Plus Silver</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<button class="w-full h-10 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md font-medium hover:bg-surface-container transition-colors flex items-center justify-center">
+        Lihat Rincian Kontrak &amp; Kuota Detail
+      </button>
+</div>
+</div>
+<!-- Transparent 4-Step Activation Tracker -->
+<div class="flex flex-col p-4 rounded-2xl bg-surface-container-lowest shadow-sm space-y-3">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface">Alur Aktivasi Transparan</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Langkah 2 dari 4</span>
+</div>
+<div class="flex flex-col space-y-3">
+<!-- Step 1 Done -->
+<div class="flex items-start gap-3">
+<div class="flex flex-col items-center">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="w-0.5 h-6 bg-primary"></div>
+</div>
+<div class="flex flex-col pt-0.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">1. Cek Kelayakan Nomor Kasir</span>
+<span class="font-body-sm text-body-sm text-secondary">Nomor 0812-9844-XXXX memenuhi syarat prioritas UMKM</span>
+</div>
+</div>
+<!-- Step 2 In Progress -->
+<div class="flex items-start gap-3">
+<div class="flex flex-col items-center">
+<div class="w-6 h-6 rounded-full bg-primary-fixed text-primary flex items-center justify-center animate-pulse">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+</div>
+<div class="w-0.5 h-6 bg-surface-container"></div>
+</div>
+<div class="flex flex-col pt-0.5">
+<span class="font-label-md text-label-md text-primary font-bold">2. Pilih Paket &amp; Konfirmasi Alamat Toko</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Sedang berjalan • Kopi Sinar Pagi BSD Rawa Buntu</span>
+</div>
+</div>
+<!-- Step 3 Waiting -->
+<div class="flex items-start gap-3">
+<div class="flex flex-col items-center">
+<div class="w-6 h-6 rounded-full bg-surface-container text-secondary flex items-center justify-center">
+<span class="font-label-sm text-label-sm">3</span>
+</div>
+<div class="w-0.5 h-6 bg-surface-container"></div>
+</div>
+<div class="flex flex-col pt-0.5">
+<span class="font-label-md text-label-md text-secondary">3. Pengiriman Router Kasir &amp; SIM Bisnis</span>
+<span class="font-body-sm text-body-sm text-secondary">Estimasi tiba dalam 1 hari kerja (Kurir Telkomsel)</span>
+</div>
+</div>
+<!-- Step 4 Waiting -->
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-surface-container text-secondary flex items-center justify-center">
+<span class="font-label-sm text-label-sm">4</span>
+</div>
+<div class="flex flex-col pt-0.5">
+<span class="font-label-md text-label-md text-secondary">4. Aktivasi Otomatis &amp; Terhubung DigiPOS</span>
+<span class="font-body-sm text-body-sm text-secondary">Panduan pairing otomatis via kode QR pada router</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Package Comparison (Bronze vs Silver vs Gold) -->
+<div class="flex flex-col space-y-2.5">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Pilihan Paket Lainnya</span>
+<span class="font-label-sm text-label-sm text-secondary">Sesuaikan skala tokomu</span>
+</div>
+<!-- Bronze -->
+<div class="flex flex-col p-3.5 rounded-xl bg-surface-container-lowest shadow-sm space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-title-md text-title-md text-on-surface">Bronze UMKM (Dasar)</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-secondary">Biaya Tambahan</span>
+</div>
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Rp90.000</span>
+<span class="font-body-sm text-body-sm text-secondary">/ bln</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">25 GB Kuota Reguler</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Cocok untuk toko dengan transaksi moderat. Tanpa prioritas khusus jam sibuk.</p>
+<button class="h-9 px-4 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md font-semibold self-start hover:bg-surface-container transition-colors">
+        Pilih Bronze
+      </button>
+</div>
+<!-- Gold -->
+<div class="flex flex-col p-3.5 rounded-xl bg-surface-container-lowest shadow-sm space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-title-md text-title-md text-on-surface">Gold UMKM (Multi-Cabang)</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-secondary">Biaya Tambahan</span>
+</div>
+<div class="flex items-baseline justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Rp275.000</span>
+<span class="font-body-sm text-body-sm text-secondary">/ bln</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">120 GB + Soundbox QRIS</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Dual SIM Failover otomatis (anti offline total), speaker pengucap transaksi QRIS instan.</p>
+<button class="h-9 px-4 rounded-full bg-surface-container-low text-on-surface font-label-md text-label-md font-semibold self-start hover:bg-surface-container transition-colors">
+        Pilih Gold
+      </button>
+</div>
+</div>
+<!-- Renewal Reminder & Billing Guard -->
+<div class="flex flex-col p-4 rounded-2xl bg-surface-container-lowest shadow-sm space-y-2.5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">event_repeat</span>
+<span class="font-title-md text-title-md text-on-surface">Pengingat Perpanjangan Otomatis (Auto-Renewal)</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+      Tagihan dipotong otomatis dari Saldo Usaha / Pulsa Bisnis setiap tanggal 28. Notifikasi SMS transparan dikirim H-3 sebelum perpanjangan.
+    </p>
+<div class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-[18px] text-primary">shield</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Bebas denda. Jeda atau batalkan paket kapan saja tanpa penalti kontrak.</span>
+</div>
+</div>
+<!-- Hardware Kit Preview -->
+<div class="flex items-center gap-3 p-3.5 rounded-xl bg-surface-container-low">
+<div class="w-14 h-14 rounded-lg bg-surface-container-lowest flex items-center justify-center flex-shrink-0 shadow-sm overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Minimalist Telkomsel Orbit white 4G 5G business router device on a clean wooden tabletop beside a mini QRIS terminal, soft shadows, studio product style lighting, sharp crisp technology photograph." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVMU7rEdKy5I9Bo6_FBa5jG2IJb0y8lfLMRw45EONlxL_34F11iLGS5aqKLTVxRryKOKdMPU3FABEPb2UPQVBeY1B6a0T3ncTU7w9J_hYXE3CUQ4vHOYqHzUbFZiWIqxmXIgOhH_ZxXFqdqAylFY4-Hq_JHSeBDFxHIFPhhNMSxPazhxfUf5LrVBGDWCaxEI8OZ7OVgLo6TOHAkMpYkmSYQdmZGFBovW76RtziOCaeuK5musSiKJXF6g"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Termasuk Router Kasir UMKM Pro</span>
+<span class="font-body-sm text-body-sm text-secondary">Plug &amp; play langsung colok listrik tanpa instalasi kabel rumit.</span>
+</div>
+</div>
+<!-- Compliance & Regulatory Footer -->
+<div class="flex items-start gap-2.5 p-3 rounded-xl bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-[18px] text-secondary flex-shrink-0 mt-0.5">policy</span>
+<p class="font-body-sm text-body-sm">
+      Terkoneksi ke jaringan resmi Telkomsel Enterprise &amp; mematuhi standar regulasi Bank Indonesia untuk keandalan infrastruktur transaksi finansial QRIS nasional.
+    </p>
+</div>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-4px_16px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-space-xs min-w-[64px] h-11 text-secondary transition-colors" data-path="ringkasan" href="#"><span class="material-symbols-outlined text-[24px]">dashboard</span><span class="font-label-sm text-label-sm">Ringkasan</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[64px] h-11 text-secondary transition-colors" data-path="solusi" href="#"><span class="material-symbols-outlined text-[24px]">lightbulb</span><span class="font-label-sm text-label-sm">Solusi</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[64px] h-11 text-secondary transition-colors" data-path="aksi-ai" href="#"><span class="material-symbols-outlined text-[24px]">neurology</span><span class="font-label-sm text-label-sm">Aksi AI</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[64px] h-11 text-secondary transition-colors" data-path="paspor" href="#"><span class="material-symbols-outlined text-[24px]">verified</span><span class="font-label-sm text-label-sm">Paspor</span></a></div></nav></body></html>

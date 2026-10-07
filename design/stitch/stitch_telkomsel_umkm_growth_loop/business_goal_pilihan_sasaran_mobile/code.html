@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100vh;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-dim": "#cbdbf5", "on-primary": "#ffffff", "surface-container-low": "#eff4ff", "on-tertiary-fixed": "#261900", "on-error": "#ffffff", "surface-container": "#e5eeff", "on-error-container": "#93000a", "surface-bright": "#f8f9ff", "secondary-fixed": "#e1e2ea", "on-secondary-fixed": "#191c22", "outline-variant": "#e8bcb7", "on-tertiary-container": "#fffbff", "primary": "#bb0013", "error": "#ba1a1a", "primary-container": "#e71621", "on-tertiary-fixed-variant": "#5c4200", "on-secondary": "#ffffff", "surface-container-lowest": "#ffffff", "inverse-on-surface": "#eaf1ff", "on-secondary-fixed-variant": "#44474d", "primary-fixed": "#ffdad6", "surface": "#f8f9ff", "on-primary-container": "#fffbff", "tertiary-container": "#966e00", "tertiary": "#775700", "on-background": "#0b1c30", "inverse-primary": "#ffb4ab", "secondary-fixed-dim": "#c4c6ce", "on-primary-fixed-variant": "#93000d", "outline": "#936e6a", "on-primary-fixed": "#410002", "surface-tint": "#c00014", "surface-variant": "#d3e4fe", "tertiary-fixed": "#ffdea2", "surface-container-highest": "#d3e4fe", "on-surface": "#0b1c30", "secondary": "#5c5e65", "tertiary-fixed-dim": "#f2bf50", "error-container": "#ffdad6", "primary-fixed-dim": "#ffb4ab", "secondary-container": "#dedfe8", "on-surface-variant": "#5e3f3c", "on-secondary-container": "#60626a", "inverse-surface": "#213145", "surface-container-high": "#dce9ff", "background": "#f8f9ff", "on-tertiary": "#ffffff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "gutter": "1.5rem", "gutter-sm": "1rem", "margin-sm": "1rem", "margin": "2rem", "space-xl": "2.5rem", "space-md": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem" }, fontFamily: { "display-lg-mobile": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "metric-numeral": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "body-sm": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Inter"], "title-md": ["Plus Jakarta Sans"], "label-sm": ["Inter"] }, fontSize: { "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "metric-numeral": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-sm flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Kembali" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface active:bg-surface-container transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><img alt="Brand logo. - Primary color: #ec1c24
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UAMYGGnteYeqlflQOa1DXYdYuVYLTreX3kKc3bePJYm3znfN_iH2BUt3j_nYZy0rYDojQxqlpQVujpfjo77uUD1czFbbiGR8xa3vdmxWC87N0WFGG2sGwilGRQSXpBjM7RXSP3dZmKl6BDBGkV_aj84kwKwsHSM15zlmJslDn5x25jsbZcXNoIA-AkWzjE2ibgt1eUIvIhcAbMcnCgA0IU7Tz_hwdnBuss8jVMrzcpuatmZrqjkCR708JG"/><div class="flex flex-col ml-space-xs"><span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider leading-none">Growth Loop</span><span class="font-title-md text-title-md text-on-surface font-semibold leading-tight line-clamp-1">Profil Usaha</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Bantuan Onboarding" class="w-11 h-11 flex items-center justify-center rounded-full text-secondary hover:text-on-surface active:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">help_outline</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full pb-32">
+<!-- Interactive Progress Header Container -->
+<section class="px-gutter-sm pt-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-semibold uppercase tracking-wider">
+          Langkah Final
+        </span>
+<span class="text-secondary font-label-sm text-label-sm">·</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Sasaran Usaha</span>
+</div>
+<!-- Self Reported Badge with verified signal style -->
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Self-reported</span>
+</div>
+</div>
+<!-- Stepper bar visual indicator -->
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden mt-space-xs">
+<div class="bg-primary h-full rounded-full transition-all duration-500 ease-out" style="width: 85%;"></div>
+</div>
+<div class="mt-space-xs">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold">
+        Apa Sasaran Utama yang Ingin Dicapai?
+      </h1>
+<p class="font-body-md text-body-md text-secondary mt-1">
+        Pilih maksimal <span class="font-semibold text-on-surface">3 sasaran</span> agar sistem Growth Loop dapat menyusun rekomendasi audit dan strategi paling akurat.
+      </p>
+</div>
+<!-- Live Counter Banner -->
+<div class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low shadow-sm mt-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">adjust</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Fokus Pertumbuhan Terpilih</span>
+</div>
+<div class="px-2.5 py-0.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold tracking-wide transition-all shadow-sm" id="selection-counter">
+        2 dari 3
+      </div>
+</div>
+</section>
+<!-- Multi-select Goal Cards List -->
+<section class="px-gutter-sm mt-space-md flex flex-col gap-space-sm" id="goals-container">
+<!-- Item 1: Tingkatkan Omzet (Preselected) -->
+<div class="goal-card relative w-full p-4 rounded-2xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all duration-200 select-none bg-primary/5 shadow-md" data-goal-id="omzet">
+<div class="flex items-start gap-3.5">
+<div class="card-icon-box w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-colors bg-primary text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">trending_up</span>
+</div>
+<div class="flex-1 min-w-0 pr-6">
+<div class="flex items-center gap-1.5 flex-wrap">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Tingkatkan Omzet Penjualan</h3>
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold">Prioritas</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-1 leading-relaxed">
+            Dongkrak pendapatan kasir dan omzet bulanan toko secara konsisten dan terukur.
+          </p>
+</div>
+</div>
+<!-- Checkmark Badge Top Right -->
+<div class="check-badge absolute top-3.5 right-3.5 w-6 h-6 rounded-full flex items-center justify-center bg-primary text-on-primary shadow-sm transition-transform scale-100">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+</div>
+<!-- Item 2: Dapatkan Pelanggan Baru (Preselected) -->
+<div class="goal-card relative w-full p-4 rounded-2xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all duration-200 select-none bg-primary/5 shadow-md" data-goal-id="pelanggan-baru">
+<div class="flex items-start gap-3.5">
+<div class="card-icon-box w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-colors bg-primary text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">person_add</span>
+</div>
+<div class="flex-1 min-w-0 pr-6">
+<div class="flex items-center gap-1.5 flex-wrap">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Dapatkan Pelanggan Baru</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">Akusisi</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-1 leading-relaxed">
+            Tarik pembeli baru dari radius sekitar gerai fisik dan saluran online terpadu.
+          </p>
+</div>
+</div>
+<div class="check-badge absolute top-3.5 right-3.5 w-6 h-6 rounded-full flex items-center justify-center bg-primary text-on-primary shadow-sm transition-transform scale-100">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+</div>
+<!-- Item 3: Tingkatkan Pembeli Berulang -->
+<div class="goal-card relative w-full p-4 rounded-2xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all duration-200 select-none" data-goal-id="repeat-order">
+<div class="flex items-start gap-3.5">
+<div class="card-icon-box w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-colors bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-[24px]">replay</span>
+</div>
+<div class="flex-1 min-w-0 pr-6">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Tingkatkan Pembeli Berulang</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1 leading-relaxed">
+            Buat pelanggan lama datang dan belanja kembali dengan program retensi terarah.
+          </p>
+</div>
+</div>
+<div class="check-badge absolute top-3.5 right-3.5 w-6 h-6 rounded-full flex items-center justify-center bg-surface-container text-transparent transition-transform scale-90">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+</div>
+<!-- Item 4: Konversi Penjualan -->
+<div class="goal-card relative w-full p-4 rounded-2xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all duration-200 select-none" data-goal-id="konversi">
+<div class="flex items-start gap-3.5">
+<div class="card-icon-box w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-colors bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-[24px]">shopping_cart_checkout</span>
+</div>
+<div class="flex-1 min-w-0 pr-6">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Tingkatkan Konversi Penjualan</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1 leading-relaxed">
+            Ubah pengunjung toko atau penanya chat menjadi pembeli riil tanpa hambatan.
+          </p>
+</div>
+</div>
+<div class="check-badge absolute top-3.5 right-3.5 w-6 h-6 rounded-full flex items-center justify-center bg-surface-container text-transparent transition-transform scale-90">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+</div>
+<!-- Item 5: Produktivitas Operasional -->
+<div class="goal-card relative w-full p-4 rounded-2xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all duration-200 select-none" data-goal-id="produktivitas">
+<div class="flex items-start gap-3.5">
+<div class="card-icon-box w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-colors bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-[24px]">tune</span>
+</div>
+<div class="flex-1 min-w-0 pr-6">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Tingkatkan Produktivitas Operasional</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1 leading-relaxed">
+            Kurangi kerjaan manual kasir, rekonsiliasi stok, dan pencatatan nota berantakan.
+          </p>
+</div>
+</div>
+<div class="check-badge absolute top-3.5 right-3.5 w-6 h-6 rounded-full flex items-center justify-center bg-surface-container text-transparent transition-transform scale-90">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+</div>
+<!-- Item 6: Promosi & Marketing -->
+<div class="goal-card relative w-full p-4 rounded-2xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all duration-200 select-none" data-goal-id="promosi">
+<div class="flex items-start gap-3.5">
+<div class="card-icon-box w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-colors bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-[24px]">campaign</span>
+</div>
+<div class="flex-1 min-w-0 pr-6">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Optimalkan Promosi &amp; Marketing</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1 leading-relaxed">
+            Iklan efektif tepat sasaran dengan anggaran efisien dan pelaporan transparan.
+          </p>
+</div>
+</div>
+<div class="check-badge absolute top-3.5 right-3.5 w-6 h-6 rounded-full flex items-center justify-center bg-surface-container text-transparent transition-transform scale-90">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+</div>
+<!-- Item 7: Loyalitas & Interaksi Pelanggan -->
+<div class="goal-card relative w-full p-4 rounded-2xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all duration-200 select-none" data-goal-id="loyalitas">
+<div class="flex items-start gap-3.5">
+<div class="card-icon-box w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-colors bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-[24px]">forum</span>
+</div>
+<div class="flex-1 min-w-0 pr-6">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Bangun Loyalitas &amp; Interaksi Pelanggan</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1 leading-relaxed">
+            Jaga hubungan erat lewat promo berkala WhatsApp Business, SMS blast, &amp; poin hadiah.
+          </p>
+</div>
+</div>
+<div class="check-badge absolute top-3.5 right-3.5 w-6 h-6 rounded-full flex items-center justify-center bg-surface-container text-transparent transition-transform scale-90">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+</div>
+<!-- Item 8: Ekspansi ke Wilayah Baru -->
+<div class="goal-card relative w-full p-4 rounded-2xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all duration-200 select-none" data-goal-id="ekspansi">
+<div class="flex items-start gap-3.5">
+<div class="card-icon-box w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-colors bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-[24px]">near_me</span>
+</div>
+<div class="flex-1 min-w-0 pr-6">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Ekspansi ke Wilayah / Pasar Baru</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1 leading-relaxed">
+            Buka cabang baru atau perluas jangkauan logistik pengiriman ke kota lain.
+          </p>
+</div>
+</div>
+<div class="check-badge absolute top-3.5 right-3.5 w-6 h-6 rounded-full flex items-center justify-center bg-surface-container text-transparent transition-transform scale-90">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+</div>
+<!-- Item 9: Adopsi Alat Digital -->
+<div class="goal-card relative w-full p-4 rounded-2xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all duration-200 select-none" data-goal-id="digital-tools">
+<div class="flex items-start gap-3.5">
+<div class="card-icon-box w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-colors bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-[24px]">phonelink</span>
+</div>
+<div class="flex-1 min-w-0 pr-6">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Tingkatkan Adopsi Alat Digital</h3>
+<p class="font-body-sm text-body-sm text-secondary mt-1 leading-relaxed">
+            Mulai beralih ke kasir pintar, QRIS Soundbox Telkomsel, dan laporan laba otomatis.
+          </p>
+</div>
+</div>
+<div class="check-badge absolute top-3.5 right-3.5 w-6 h-6 rounded-full flex items-center justify-center bg-surface-container text-transparent transition-transform scale-90">
+<span class="material-symbols-outlined text-[16px] font-bold">check</span>
+</div>
+</div>
+</section>
+<!-- Impact Insight Card (Dynamic Recommendation based on selection) -->
+<section class="px-gutter-sm mt-space-lg">
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-3 relative overflow-hidden">
+<!-- Ambient indicator line in red -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="flex items-center justify-between pl-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">insights</span>
+<span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Rekomendasi Fokus Pertumbuhan</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">
+          Estimasi Otomatis
+        </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface pl-1 leading-relaxed">
+        Memilih fokus pada <span class="font-semibold text-primary">Omzet + Pelanggan Baru</span> terbukti meningkatkan kecepatan naik kelas UMKM binaan Telkomsel hingga <span class="font-bold text-on-surface">35% lebih cepat</span>.
+      </p>
+<!-- Solution Tag Bundle -->
+<div class="mt-1 pl-1 pt-2 flex flex-col gap-2">
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Telkomsel MyAds LBS &amp; Kuncie Kasir</span>
+<span class="font-label-sm text-label-sm text-secondary">Aktivasi otomatis pada dasbor Anda</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded-md bg-surface-container-highest text-primary font-label-sm text-label-sm font-bold shrink-0">
+            Termasuk di Paket
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Institutional Trust & Security Assurance Footnote -->
+<section class="px-gutter-sm mt-space-md mb-2 flex items-center justify-center gap-2 text-center text-secondary">
+<span class="material-symbols-outlined text-[16px] text-secondary shrink-0">lock</span>
+<span class="font-body-sm text-body-sm">
+      Data aman terenkripsi 256-bit SSL Telkomsel Shield &amp; standar kepatuhan regulasi BI.
+    </span>
+</section>
+<!-- Sticky Bottom CTA Action Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface/95 backdrop-blur-md shadow-xl pb-safe">
+<div class="max-w-md mx-auto px-gutter-sm py-3 flex items-center gap-3">
+<!-- Tertiary Back Button -->
+<button class="h-11 px-4 rounded-full flex items-center justify-center text-secondary hover:text-on-surface active:bg-surface-container transition-colors shrink-0" onclick="history.back()" type="button">
+<span class="font-label-md text-label-md font-semibold">Kembali</span>
+</button>
+<!-- Primary Action Pill Button with reactive state -->
+<button class="flex-1 h-11 px-5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-2 shadow-md hover:bg-primary-container active:scale-[0.99] transition-all" id="submit-btn" type="button">
+<span id="submit-text">Atur Target Pendapatan (2/3)</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const maxSelect = 3;
+    const cards = document.querySelectorAll('.goal-card');
+    const counterBadge = document.getElementById('selection-counter');
+    const submitBtn = document.getElementById('submit-btn');
+    const submitText = document.getElementById('submit-text');
+
+    function updateState() {
+      const selectedCards = document.querySelectorAll('.goal-card[data-selected="true"]');
+      const count = selectedCards.length;
+
+      counterBadge.textContent = `${count} dari ${maxSelect}`;
+      submitText.textContent = `Atur Target Pendapatan (${count}/${maxSelect})`;
+
+      if (count === 0) {
+        submitBtn.disabled = true;
+        submitBtn.classList.add('opacity-50', 'cursor-not-allowed');
+      } else {
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+      }
+    }
+
+    // Set initial pre-selected states
+    cards.forEach(card => {
+      const goalId = card.getAttribute('data-goal-id');
+      if (goalId === 'omzet' || goalId === 'pelanggan-baru') {
+        card.setAttribute('data-selected', 'true');
+      } else {
+        card.setAttribute('data-selected', 'false');
+      }
+
+      card.addEventListener('click', () => {
+        const isSelected = card.getAttribute('data-selected') === 'true';
+        const currentSelectedCount = document.querySelectorAll('.goal-card[data-selected="true"]').length;
+
+        if (!isSelected) {
+          if (currentSelectedCount >= maxSelect) {
+            // Little feedback bounce if limit reached
+            card.classList.add('translate-x-1');
+            setTimeout(() => card.classList.remove('translate-x-1'), 150);
+            return;
+          }
+          // Select
+          card.setAttribute('data-selected', 'true');
+          card.classList.add('bg-primary/5', 'shadow-md');
+          
+          const iconBox = card.querySelector('.card-icon-box');
+          iconBox.classList.remove('bg-surface-container', 'text-secondary');
+          iconBox.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+
+          const check = card.querySelector('.check-badge');
+          check.classList.remove('bg-surface-container', 'text-transparent', 'scale-90');
+          check.classList.add('bg-primary', 'text-on-primary', 'scale-100', 'shadow-sm');
+        } else {
+          // Deselect
+          card.setAttribute('data-selected', 'false');
+          card.classList.remove('bg-primary/5', 'shadow-md');
+
+          const iconBox = card.querySelector('.card-icon-box');
+          iconBox.classList.add('bg-surface-container', 'text-secondary');
+          iconBox.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+
+          const check = card.querySelector('.check-badge');
+          check.classList.add('bg-surface-container', 'text-transparent', 'scale-90');
+          check.classList.remove('bg-primary', 'text-on-primary', 'scale-100', 'shadow-sm');
+        }
+
+        updateState();
+      });
+    });
+
+    updateState();
+  })();
+</script></main></body></html>
