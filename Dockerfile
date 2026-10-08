@@ -20,8 +20,7 @@ RUN composer install --no-dev --no-interaction --no-scripts --prefer-dist --opti
 
 # ---- 3. Runtime ----
 FROM php:8.4-cli-alpine
-RUN apk add --no-cache bash sqlite \
-    && docker-php-ext-install pcntl opcache
+RUN apk add --no-cache bash sqlite
 WORKDIR /var/www/html
 
 COPY . .
@@ -38,7 +37,6 @@ ENV APP_ENV=production \
     APP_DEBUG=false \
     DB_CONNECTION=sqlite \
     DB_DATABASE=/var/www/html/storage/app/data/database.sqlite \
-    PHP_CLI_SERVER_WORKERS=4 \
     TUMBUH_AUTO_SEED=true
 
 EXPOSE 8000
